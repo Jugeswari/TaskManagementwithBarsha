@@ -28,7 +28,7 @@ public class AddTaskServlet extends HttpServlet {
         String email = (String) session.getAttribute("session_email");
 
 		try {
-			// Database Connection
+
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/task_management", "root", "root");
 
